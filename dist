@@ -1,0 +1,6 @@
+/armaanpics.github.io/
+├── index.html
+├── index.js (or other .js files)
+├── assets/
+│   ├── style.css
+│   ├── script.js
