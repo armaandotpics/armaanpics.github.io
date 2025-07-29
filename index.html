@@ -1,152 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>armaan.pics</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f6f6f6;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      background-color: #222;
-    }
-    nav a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #facc15;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #333;
-    }
-    .pricing-table, .add-ons {
-      width: 100%;
-      border-collapse: collapse;
-      background: #fff;
-      border-radius: 6px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .pricing-table th, .pricing-table td,
-    .add-ons th, .add-ons td {
-      border: 1px solid #ddd;
-      padding: 1rem;
-      text-align: left;
-    }
-    .pricing-table th, .add-ons th {
-      background-color: #facc15;
-      color: #111;
-    }
-    button[type="submit"] {
-      background-color: #facc15;
-      color: #111;
-      border: none;
-      padding: 0.6rem 1.2rem;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button[type="submit"]:hover {
-      background-color: #eab308;
-    }
-    footer {
-      background-color: #111;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>armaan.pics</h1>
-    <p>Sports Media That Moves</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About</h2>
-    <p>I’m a high school sports photographer and videographer based in Walpole, MA. I cover high school and club-level games across the Boston area, delivering clean, fast, and fully customized content for each player and team.</p>
-  </section>
-
-  <section id="portfolio" style="background-color: #f9f9f9; padding: 2rem 1rem;">
-    <h2 style="text-align: center; font-size: 2rem; color: #222; margin-bottom: 1.5rem;">Portfolio</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
-      <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"><img src="/_DSC7925.jpg" alt="Soccer Action" style="width: 100%; display: block;" /></div>
-      <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"><img src="/_DSC7845.jpg" alt="1v1 Soccer Play" style="width: 100%; display: block;" /></div>
-      <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"><img src="/_DSC5577.jpg" alt="Lacrosse Portrait" style="width: 100%; display: block;" /></div>
-      <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"><img src="/_DSC5435.jpg" alt="Lacrosse Celebration" style="width: 100%; display: block;" /></div>
-      <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"><img src="/_DSC2987.jpg" alt="Lacrosse Solo" style="width: 100%; display: block;" /></div>
-      <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"><img src="/_DSC4113.jpg" alt="Baseball Mound" style="width: 100%; display: block;" /></div>
-      <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"><img src="/_DSC6390.jpg" alt="Track Start" style="width: 100%; display: block;" /></div>
-      <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"><img src="/_DSC3870.jpg" alt="Lacrosse Mid-Run" style="width: 100%; display: block;" /></div>
-    </div>
-  </section>
-
-  <section id="services">
-    <h2>Player Photo Packages</h2>
-    <table class="pricing-table">
-      <tr><th>Group Size</th><th>Price</th><th>Details</th></tr>
-      <tr>
-        <td>3–4 Players</td>
-        <td>$35/player</td>
-        <td>20–50 edited action shots per player<br>Raw files included<br>Delivery within 48 hours</td>
-      </tr>
-      <tr>
-        <td>5–7 Players</td>
-        <td>$30/player</td>
-        <td>30+ edited photos per player<br>Raw files included<br>Delivery within 3 days</td>
-      </tr>
-      <tr>
-        <td>8+ Players</td>
-        <td>$200 flat</td>
-        <td>Up to 20 edited photos per player<br>Team and group shots included<br>Raw files included<br>Delivery within 3–5 days</td>
-      </tr>
-      <tr>
-        <td>Solo Session</td>
-        <td>$75</td>
-        <td>40–70 edited images of one player<br>Raw files included<br>Delivery within 24 hours</td>
-      </tr>
-    </table>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 armaan.pics – All rights reserved</p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>armaan.pics - Sports Media That Moves</title>
+    <meta name="description" content="Professional high school sports photography and videography based in Walpole, MA. Delivering clean, fast, and fully customized content for each player and team across the Boston area." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-PgfL0Xjd.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BgCOD55v.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+  </body>
 </html>
